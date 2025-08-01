@@ -1,0 +1,575 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root {
+    --bg-color: #000000;
+    --second-bg-color: #161616;
+    --text-color: #ffffff;
+    --main-color: #0bb121;
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+
+body {
+    background: var(--bg-color);
+    font-family: "Poppins", sans-serif;
+    color: var(--text-color);
+}
+html::-webkit-scrollbar {
+    width: 0.8rem;
+}
+html::-webkit-scrollbar-track {
+    background: var(--bg-color);
+}
+html::-webkit-scrollbar-thumb {
+    background: var(--main-color);
+}
+
+.pheader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 3rem 9%;
+    background: rgba(0 ,0 ,0 ,0.7);
+    filter: drop-shadow(10px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+.plogo {
+    font-size: 3rem;
+    color: var(--main-color);
+    font-weight: 800;
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+.plogo:hover {
+    transform: scale(1.1);
+}
+.pnavbar a {
+    font-size: 1.8rem;
+    color: var(--text-color);
+    margin-left: 4rem;
+    font-weight: 500;
+    transition: 0.3s ease;
+    border-bottom: 3px solid transparent;
+}
+.pnavbar a:hover,
+.pnavbar a.active {
+    color: var(--main-color);
+    border-bottom: 3px solid var(--main-color);
+}
+#pmenu-icon {
+    font-size: 3.6rem;
+    color: var(--main-color);
+    display: none;
+    
+}
+@media (max-widht: 995px) {
+    #pmenu-icon {
+        display: block;
+    }
+    .pnavbar {
+        position: absolute;
+        top: 100%;
+        right: 0;
+        width: 40%;
+        border-left: 3px solid var(--main-color);
+        border-bottom: 3px solid var(--main-color);
+        border-bottom-left-radius: 2rem;
+        padding: 1rem 3%;
+        background-color: var(--second-bg-color);
+        border-top: 0.1rem solid rgba(0, 0, 0, 0.1);
+        display: none;
+    }
+    .pnavbar.active {
+        display: block;
+    }
+    .pnavbar a {
+        display: block;
+        font-size: 2rem;
+        margin: 3rem 0;
+    }
+    .pnavbar a:hover,
+    .pnavbar a.active {
+        padding: 1rem;
+        border-radius: 0.5rem;
+        border-bottom: 0.5rem solid var(--main-color);
+    }
+
+}
+
+section {
+    min-height: 100vh;
+    padding: 5rem 9% 5rem;
+}
+.phome {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8rem;
+    background: var(--bg-color);
+}
+.phome .phome-content h1{
+    font-size: 6rem;
+    font-weight: 700;
+    line-height: 1.3;
+}
+span {
+    color: var(--main-color);
+}
+.phome-content h3{
+    font-size: 4rem;
+    margin-bottom: 1rem;
+    font-weight: 700;
+}
+.phome-img {
+    border-radius: 50%;
+}
+.phome-img img {
+    position: relative;
+    top: -8rem;
+    left: 0;
+    margin: 0; 
+    width: 12vw;
+    max-width: 185px;
+    border-radius: 50%;
+    box-shadow: 0 0 25px var(--main-color);
+    cursor: pointer;
+}
+.phome-img img:hover {
+    transform: scale(1.01);
+    filter: drop-shadow( 0 0 25px var(--main-color));
+}
+.phome-content p{
+    font-size: 1.8rem;
+    font-weight: 500;
+}
+.psocial-icon a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 4rem;
+    height: 4rem;
+    background: transparent;
+    border: 0.2rem solid var(--main-color);
+    font-size: 2rem;
+    border-radius: 50%;
+    color: var(--main-color);
+    margin: 3rem 1.5rem 3rem 0;
+    transition: 0.3s ease;
+}
+.psocial-icon a:hover {
+    color: black;
+    transform: scale(1.3)translateY(-5px);
+    background: var(--main-color);
+    box-shadow: 0 0 25px var(--main-color); 
+}
+.btn {
+    display: inline-block;
+    padding: 1rem 2.8rem;
+    background: var(--bg-color);
+    border-radius: 4rem;
+    font-size: 1.6rem;
+    color: var(--main-color);
+    border: 2px solid var(--main-color);
+    letter-spacing: 0.1rem;
+    font-weight: 600;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+.btn:hover {
+    transform: scale(1.03);
+    background-color: var(--main-color);
+    color: black;
+    box-shadow: 0 0 25px var(--main-color);
+}
+.ptyping-text {
+    font-size: 34px;
+    font-weight: 600;
+    min-width: 280px;
+    overflow: hidden; 
+    display: inline-block; 
+}
+.ptyping-text span {
+    position: relative;
+    display: inline-block;
+}
+.ptyping-text span::before{
+    content: 'Software Developer';
+    color: var(--main-color);
+    animation: words 20s infinite;
+}
+.ptyping-text span::after{
+    content: '';
+    background: var(--bg-color);
+    position: absolute;
+    width: calc(100% + 8px);
+    height: 100%;
+    border-left: 3px solid var(--bg-color);
+    right: -8px;
+    animation: cursor 0.6s infinite, typing 20s steps(14) infinite;
+}
+@keyframes cursor {
+    to {
+        border-left: 3px solid var(--main-color);
+    }
+}
+@keyframes words {
+    0%, 20% {
+        content: 'Web Developer';
+    }
+    21%, 40% {
+        content: 'Database Manager';
+    }
+    41%, 60% {
+        content: 'Web Designer';
+    }
+    61%, 80% {
+        content: 'Front-End Developer';
+    }
+    81%, 100% {
+        content: 'Back-End Developer';
+    }
+}
+@keyframes typing {
+    10%, 15%,
+    30%, 35%,
+    50%, 55%,
+    70%, 75%,
+    90%, 95% {
+        width: 0;
+    }
+    5%, 20%,
+    25%, 40%,
+    45%, 60%,
+    65%, 80%, 85%{
+        width: calc(100% + 8px);
+    }
+}
+@media (max-width:100px) {
+    .phome {
+        gap: 4rem;
+    }
+}
+@media (max-width:995px) {
+    .phome {
+        flex-direction: column;
+        margin: 5rem 4rem;
+    }
+    .phome .phome-content h3 {
+        font-size: 5rem;
+    }
+    .phome-img img {
+        width: 70vw;
+        margin-top: 4rem;
+    }
+}
+
+/*service section*/
+
+.pservices {
+    background: var(--second-bg-color);
+}
+/* .pheading {
+
+} */
+.pservices-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    gap: 2.5rem;
+}
+.pservices-box {
+    background-color: var(--main-color);
+    height: 280px;
+    border-radius: 3rem;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+.pservices-box:hover {
+    background: transparent;
+    color: var(--text-color);
+    transform: scale(1.03);
+    border: 1px solid var(--main-color);
+}
+.pservices-box .pservices-info {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    max-height: 200px;
+    justify-content: center;
+    align-items: center;
+    padding: 5em;
+}
+.pservices-info h4 {
+    font-size: 2.5rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+.pservices-info p {
+    font-size: 1.6rem;
+    font-weight: 400;
+    max-height: 100px;
+    margin: auto;
+} 
+@media (max-width:991px) {
+    section {
+        padding: 10rem 3% 2rem;
+    }
+    .pservices-container {
+        padding-bottom: 3rem;
+    }
+}
+@media (max-width:895px) {
+    .pservices h2{
+        margin-bottom: 3rem;
+    }
+    .pservices-container {
+        grid-template-columns: repeat(1,1fr);
+    }
+}
+/* skill secttion */
+.pskill {
+    background: var(--bg-color);
+}
+.pskill .pcontainer {
+    background: rgba(45, 229, 45, 0.278);
+    color: var(--text-color);
+    border-radius: 1rem;
+    padding: 2rem;
+    width: 70%;
+    margin: auto;
+    margin-top: 2rem;
+}
+.pskill .pcontainer .prow {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    flex-wrap: wrap;
+    gap: 1.8rem;
+}
+.pskill .pcontainer .pbar {
+    margin-bottom: 15px;
+    padding: 10px;
+    border-radius: 1rem;
+    background: var(--bg-color);
+    box-shadow: none;
+    transition: 0.3s ease;
+}
+.pskill .pcontainer .pbar:hover {
+    box-shadow: 0 10px 20px var(--main-color);
+}
+.pskill .pcontainer .pbar .pinfo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+.pskill .pcontainer .pbar .pinfo span{
+    font-size: 2rem;
+    font-weight: 500;
+    margin-left: 0.5rem;
+}
+#logo-html-img {
+    height: 120px;
+    width: 120px;
+    
+}
+#logo-css-img {
+    height: 120px;
+    width: 120px;
+}
+#logo-js-img {
+    height: 120px;
+    width: 120px;
+}
+#logo-node-js-img {
+    height: 120px;
+    width: 120px;
+}
+#logo-exp-js-img {
+    height: 120px;
+}
+#logo-mongo-db-img {
+    height: 120px;
+}
+/* section pendidikan */
+
+.pendidikan {
+    background: var(--second-bg-color);
+}
+.pendidikan .timeline {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.pendidikan .timeline::after{
+    content: '';
+    position: absolute;
+    width: 6px;
+    background: rgb(90, 64, 64);
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -3px;
+    z-index: -2px;
+}
+.pendidikan .container {
+    padding: 10px 40px;
+    position: relative;
+    background-color: inherit;
+    width: 50%;
+}
+.pendidikan .container::after{
+    content: '\f501';
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    line-height: 25px;
+    right: -17px;
+    background-color: rgb(252, 252, 252);
+    border: 4px solid var(--main-color);
+    top: 15px;
+    border-radius: 50%;
+    z-index: 100;
+    font-size: 1.89rem;
+    text-align: center;
+    font-weight: 600;
+    font-family: "Font Awesome\ 5 free";
+    color:rgb(90, 64, 64);
+}
+.pendidikan .left {
+    left: 0;
+}
+.pendidikan .right {
+    left: 50%;
+}
+.pendidikan .left::before{
+    content: '';
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    right: 30px;
+    border: medium solid var(--main-color);
+    border-width: 10px 0 10px 10px;
+    border-color: transparent transparent transparent var(--main-color);
+}
+.pendidikan .right::before{
+    content: '';
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    left: 30px;
+    border: medium solid var(--main-color);
+    border-width: 10px 10px 10px 0;
+    border-color: transparent var(--main-color) transparent ;
+}
+.pendidikan .right::after{
+    left: -16px;
+}
+.pendidikan .content {
+    background: var(--main-color);
+    position: relative;
+    border-radius:6px;
+}
+.pendidikan .content .tag {
+    font-size: 1.5rem;
+    padding-top: 1.5rem;
+    padding-left: 1.5rem;
+}
+.pendidikan .content .decs {
+    margin-left: 1.5rem;
+    padding-bottom: 1rem;
+}
+.pendidikan .content .decs h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: black;
+
+}
+.pendidikan .content .decs p {
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: black;
+}
+@media screen and (max-width:600px) {
+    .pendidikan .timeline {
+        margin-top: 2rem;
+    }
+    .pendidikan .timeline::after{
+        left: 31px;
+    }
+    .pendidikan .container {
+        width: 100%;
+        padding-left: 8rem;
+        padding-right: 2rem;
+    }
+    .pendidikan .container::after{
+        font-size: 2.2rem;
+    }
+    .pendidikan .container::before{
+        left: 61px;
+        border: medium solid var(--main-color);
+        border-width: 10px 10px 10px 0;
+        border-color: transparent var(--main-color) transparent transparent;
+    }
+    .pendidikan .left::after{
+        left: 15px;
+    }
+    .pendidikan .right::after{
+        left: 15px; 
+    }
+    .pendidikan .right {
+        left: 0%;
+    }
+}
+/* contact form */ 
+.contact h2 {
+    margin-bottom: 3rem;
+    color: white
+}
+.contact form {
+    max-width: 70rem;
+    margin: 1rem auto;
+    margin-bottom: 3rem;
+    text-align: center;
+}
+.contact form .input-box {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.contact form .input-box input,
+.contact form textarea {
+    width: 100%;
+    padding: 1.5rem;
+    color: var(--text-color);
+    background: var(--bg-color);
+    border-radius: 0.8rem;
+    border: 2px solid var(--main-color);
+    margin: 1rem 0;
+    resize: none;
+}
+.contact form .btn {
+    margin-top: 2rem;
+}
+
