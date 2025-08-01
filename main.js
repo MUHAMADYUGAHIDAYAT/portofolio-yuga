@@ -1,1 +1,1 @@
-alert("Website ini masih dalam pengembangan (daktau kapan selesai nyo lagi males)")
+alert("Website ini masih dalam pengembangan")
