@@ -77,6 +77,9 @@ html::-webkit-scrollbar-thumb {
     font-size: 3.6rem;
     color: var(--main-color);
     display: none;
+    cursor: pointer;
+    z-index: 999;
+    position: relative;
     
 }
 @media (max-widht: 995px) {
@@ -667,6 +670,7 @@ span {
         font-size: 1.4rem;
     }
 }
+
 
 
 
