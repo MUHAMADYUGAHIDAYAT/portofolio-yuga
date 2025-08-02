@@ -122,6 +122,12 @@ section {
     text-align: justify;
 }
 
+@media (max-width: 600px) {
+    #pisi-p {
+    font-size: 1rem;
+    }
+}
+
 .phome {
     display: flex;
     justify-content: center;
@@ -577,6 +583,7 @@ span {
 .contact form .btn {
     margin-top: 2rem;
 }
+
 
 
 
