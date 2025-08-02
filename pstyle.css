@@ -337,6 +337,7 @@ span {
     font-weight: 400;
     max-height: 100px;
     margin: auto;
+    text-align: justify;
 } 
 @media (max-width:991px) {
     section {
@@ -603,11 +604,11 @@ span {
     }
 
     .phome-content h1 {
-        font-size: 2.4rem;
+        font-size: 2rem;
     }
 
     .phome-content h3 {
-        font-size: 1.8rem;
+        font-size: 1.4rem;
     }
 
     .phome-content p {
@@ -626,7 +627,49 @@ span {
     }
 
     .ptyping-text {
-        font-size: 1.6rem;
+        font-size: 1.2/* Tambahan Media Query untuk HP */
+@media (max-width: 768px) {
+    html {
+        font-size: 50%;
+    }
+
+    .phome {
+        flex-direction: column;
+        gap: 3rem;
+        text-align: center;
+    }
+
+    .phome-img img {
+        width: 40vw;
+        max-width: 140px;
+        top: 0;
+    }
+
+    .phome-content h1 {
+        font-size: 3.6rem;
+    }
+
+    .phome-content h3 {
+        font-size: 2.6rem;
+    }
+
+    .phome-content p {
+        font-size: 1.4rem;
+    }
+
+    .psocial-icon a {
+        width: 3.5rem;
+        height: 3.5rem;
+        font-size: 1.8rem;
+    }
+
+    .btn {
+        font-size: 1.4rem;
+        padding: 0.8rem 2.4rem;
+    }
+
+    .ptyping-text {
+        font-size: 2.2rem;
     }
 
     .pservices-info h4 {
@@ -660,6 +703,41 @@ span {
         font-size: 1.4rem;
     }
 }
+rem;
+    }
+
+    .pservices-info h4 {
+        font-size: 2rem;
+    }
+
+    .pservices-info p {
+        font-size: 1.4rem;
+    }
+
+    .pskill .pcontainer {
+        width: 90%;
+        padding: 1.5rem;
+    }
+
+    .pskill .pcontainer .pbar .pinfo span {
+        font-size: 1.5rem;
+    }
+
+    .pskill .pcontainer .pbar img {
+        width: 90px !important;
+        height: 90px !important;
+    }
+
+    .contact h2 {
+        font-size: 2.8rem;
+    }
+
+    .contact form .input-box input,
+    .contact form textarea {
+        font-size: 1.4rem;
+    }
+}
+
 
 
 
