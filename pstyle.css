@@ -335,10 +335,15 @@ span {
 .pservices-info p {
     font-size: 1.6rem;
     font-weight: 400;
-    max-height: 100px;
+    /* max-height: 100px; */
     margin: auto;
     text-align: justify;
-} 
+    text-align-last: left;
+    hyphens: auto;
+    line-height: 1.8;
+    overflow-wrap: break-word;
+    word-break: normal;
+}  
 @media (max-width:991px) {
     section {
         padding: 10rem 3% 2rem;
@@ -661,6 +666,7 @@ span {
         font-size: 1.4rem;
     }
 }
+
 
 
 
