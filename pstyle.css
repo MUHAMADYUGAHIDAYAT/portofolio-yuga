@@ -340,6 +340,7 @@ span {
     text-align: justify;
     text-justify: inter-word;
     hyphens: auto;
+    word-spacing: 0.05em;
     line-height: 1.6;
     overflow-wrap: break-word;
     word-break: normal;
@@ -666,6 +667,7 @@ span {
         font-size: 1.4rem;
     }
 }
+
 
 
 
