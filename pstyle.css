@@ -80,9 +80,9 @@ html::-webkit-scrollbar-thumb {
     cursor: pointer;
     z-index: 999;
     position: relative;
-    
 }
-@media (max-widht: 995px) {
+
+@media (max-width: 995px) {
     #pmenu-icon {
         display: block;
     }
@@ -121,15 +121,11 @@ section {
     min-height: 100vh;
     padding: 5rem 9% 5rem;
 }
+
 #pisi-p {
     text-align: justify;
 }
 
-/* @media (max-width: 600px) {
-    #pisi-p {
-    font-size: 1.8rem;
-    }
-} */
 
 .phome {
     display: flex;
@@ -294,6 +290,7 @@ span {
     }
 }
 
+
 /*service section*/
 
 .pservices {
@@ -330,24 +327,28 @@ span {
     align-items: center;
     padding: 5em;
 }
+
+
 .pservices-info h4 {
     font-size: 2.5rem;
     font-weight: 500;
     margin-bottom: 1rem;
 }
+
 .pservices-info p {
     font-size: 1.6rem;
     font-weight: 400;
     /* max-height: 100px; */
     margin: auto;
     text-align: justify;
-    text-justify: inter-word;
+    text-align-last: left;
     hyphens: auto;
-    word-spacing: 0.05em;
-    line-height: 1.6;
+    line-height: 1.8;
     overflow-wrap: break-word;
     word-break: normal;
-}  
+} 
+
+
 @media (max-width:991px) {
     section {
         padding: 10rem 3% 2rem;
@@ -636,7 +637,7 @@ span {
     }
 
     .ptyping-text {
-        font-size: 1rem;
+        font-size: 2rem;
     }
 
     .pservices-info h4 {
@@ -670,17 +671,4 @@ span {
         font-size: 1.4rem;
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
 
