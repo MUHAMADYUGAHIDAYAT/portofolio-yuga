@@ -113,10 +113,15 @@ html::-webkit-scrollbar-thumb {
 
 }
 
+/* beranda section */
 section {
     min-height: 100vh;
     padding: 5rem 9% 5rem;
 }
+#pberanda {
+    text-align: justify;
+}
+
 .phome {
     display: flex;
     justify-content: center;
@@ -572,4 +577,5 @@ span {
 .contact form .btn {
     margin-top: 2rem;
 }
+
 
