@@ -124,7 +124,7 @@ section {
 
 @media (max-width: 600px) {
     #pisi-p {
-    font-size: 1rem;
+    font-size: 1.6rem;
     }
 }
 
@@ -583,6 +583,7 @@ span {
 .contact form .btn {
     margin-top: 2rem;
 }
+
 
 
 
