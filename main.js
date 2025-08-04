@@ -7,7 +7,7 @@ menuIcon.onclick = function () {
     navbar.classList.toggle("active");
 };
 
-let pesan = document.getElementById("lagi-lesu");
+let pesan = document.getElementById("raffiayam");
 pesan.onclick = function () {
     alert("Fitur Masih Belum Tersedia");
 };
