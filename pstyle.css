@@ -97,10 +97,16 @@ html::-webkit-scrollbar-thumb {
         padding: 1rem 3%;
         background-color: var(--second-bg-color);
         border-top: 0.1rem solid rgba(0, 0, 0, 0.1);
-        display: none;
+        opacity: 0;
+        transform: translateY(-10px);
+        pointer-events: none;
+        transition: all 0.4s ease-in-out;
+        z-index: 98;
     }
     .pnavbar.active {
-        display: block;
+        opacity: 1;
+        transform: translateY(0);
+        pointer-events: auto;
     }
     .pnavbar a {
         display: block;
@@ -671,4 +677,5 @@ span {
         font-size: 1.4rem;
     }
 }
+
 
