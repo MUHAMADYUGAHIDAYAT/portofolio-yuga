@@ -347,11 +347,6 @@ span {
     /* max-height: 100px; */
     margin: auto;
     text-align: justify;
-    text-align-last: left;
-    hyphens: auto;
-    line-height: 1.8;
-    overflow-wrap: break-word;
-    word-break: normal;
 } 
 
 
@@ -677,5 +672,6 @@ span {
         font-size: 1.4rem;
     }
 }
+
 
 
