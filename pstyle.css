@@ -344,9 +344,12 @@ span {
 .pservices-info p {
     font-size: 1.6rem;
     font-weight: 400;
-    /* max-height: 100px; */
-    margin: auto;
+    margin: 0;
     text-align: justify;
+    text-justify: inter-word;
+    word-break: normal;
+    hyphens: none;
+    line-height: 1.6;
 } 
 
 
@@ -672,6 +675,7 @@ span {
         font-size: 1.4rem;
     }
 }
+
 
 
 
