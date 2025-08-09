@@ -301,6 +301,7 @@ span {
 
 #pservices {
     background: var(--second-bg-color);
+    display: grid;
 }
 .pservices-container {
     display: grid;
@@ -753,6 +754,7 @@ span {
         font-size: 1.4rem;
     }
 }
+
 
 
 
