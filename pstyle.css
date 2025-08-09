@@ -368,6 +368,8 @@ span {
 /* skill secttion */
 .pskill {
     background: var(--bg-color);
+    align-content: center;
+    display: flex;
 }
 .pskill .pcontainer {
     background: rgba(45, 229, 45, 0.278);
@@ -376,7 +378,7 @@ span {
     padding: 2rem;
     width: 70%;
     margin: auto;
-    margin-top: 2rem;
+
 }
 .pskill .pcontainer .prow {
     display: grid;
@@ -753,6 +755,7 @@ span {
         font-size: 1.4rem;
     }
 }
+
 
 
 
