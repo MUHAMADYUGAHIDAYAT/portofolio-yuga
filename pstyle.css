@@ -595,6 +595,80 @@ span {
     margin-top: 2rem;
 }
 
+/* Pop up Wa  */
+.ke-wa-bae p{
+    font-size: 2rem;
+    margin-bottom: 3rem;
+}
+.ke-wa-bae {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    inset: 0;
+    background: var(--bg-color);
+    padding: 6rem;
+    box-shadow: 10px green;
+    text-align: center;
+    z-index: 9999;
+    border-radius: 3rem;
+    border: 3px solid var(--main-color);
+    margin: auto;
+    max-width: 80rem;
+    max-height: 24rem;
+    opacity: 0;
+    visibility: hidden;
+    transform: scale(0.8);
+    transition: opacity 0.4s ease, transform 0.4s ease;
+}
+.ke-wa-bae.active {
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1);
+}
+
+.ke-wa-bae button {
+    margin: 5px;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+
+.btn-iyo {
+    background-color: var(--bg-color);
+    color: var(--main-color);
+    border-radius: 10px;
+    font-size: 2rem;
+    font-weight: bold;
+    transition: 0.3s ease;
+    border: 2px solid var(--main-color) !important;
+    margin-right: 4rem !important;
+}
+.btn-iyo:hover {
+    color: var(--bg-color);
+    transform: scale(1.2)translateY(-5px);
+    background-color: var(--main-color);
+    filter: drop-shadow( 0 0 20px var(--main-color));
+}
+
+.btn-idak {
+    background-color: var(--bg-color);
+    color: rgb(224, 0, 0);
+    border-radius: 10px;
+    font-size: 2rem;
+    font-weight: bold;
+    border: 2px solid rgb(224, 0, 0) !important;
+    margin-left: 4rem !important;
+    transition: 0.3s ease;
+}
+
+.btn-idak:hover {
+    color: var(--bg-color);
+    transform: scale(1.2)translateY(-5px);
+    background-color: rgb(224, 0, 0);
+    filter: drop-shadow( 0 0 20px rgb(224, 0, 0));
+}
+
 /* Media Query untuk HP */
 @media (max-width: 768px) {
     html {
@@ -679,6 +753,7 @@ span {
         font-size: 1.4rem;
     }
 }
+
 
 
 
