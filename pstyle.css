@@ -301,15 +301,12 @@ span {
 
 #pservices {
     background: var(--second-bg-color);
-    align-content: center;
-    display: flex;
 }
 .pservices-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     align-items: center;
     gap: 2.5rem;
-    margin: auto;
 }
 .pservices-box {
     background-color: var(--main-color);
@@ -756,6 +753,7 @@ span {
         font-size: 1.4rem;
     }
 }
+
 
 
 
