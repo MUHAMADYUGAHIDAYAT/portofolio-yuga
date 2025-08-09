@@ -366,9 +366,12 @@ span {
     }
 }
 /* skill secttion */
-.pskill {
+#pskill {
     background: var(--bg-color);
+    align-content: center;
+    display: flex;
 }
+
 .pskill .pcontainer {
     background: rgba(45, 229, 45, 0.278);
     color: var(--text-color);
@@ -753,6 +756,7 @@ span {
         font-size: 1.4rem;
     }
 }
+
 
 
 
